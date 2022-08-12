@@ -14,9 +14,9 @@ The component library used is Material UI. While Typescript is used, in the inte
 
 A set of default users are already within the in-memory database for you to use. You can see the complete list in the file src/utils/db.ts. For convenience, you can use the username `owl0` and password `password0` to login. If you prefer, the Sign Up form will allow you to create new users who are automatically given a balance of 1000 OWL coins.
 
-Once you are logged in you are able to exchange coins with the other users. If you would like to add more coins to your account a faucet is available on the user page as well.
+Once you are logged in you are able to exchange coins with the other users. A good initial user to transfer coins to is user `owl1`. If you would like to add more coins to your account a faucet is available on the user page as well. Finally, the user page shows your complete transaction history.
 
-Finally, the user page shows your complete transaction history.
+This project is deployed via Vercel and is available at https://minerva-technical-challenge.vercel.app/.
 
 ## Getting Started
 
