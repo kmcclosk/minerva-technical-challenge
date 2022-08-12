@@ -10,6 +10,8 @@ This webapp has the following functionality:
 - Realization of money deposit.
 - Transfer from account A to account B.
 
+The app has an owl theme and is called Minerva.
+
 The component library used is Material UI. While Typescript is used, in the interests of time, some types are any. useMemo and useCallback are not used, but there are cases which they may be helpful, such as when displaying the transaction history. The backing store of the app is local using React Context. Data is not persisted between sessions. A simple set of tests for the login page are created using react-testing-library.
 
 A set of default users are already within the in-memory database for you to use. You can see the complete list in the file src/utils/db.ts. For convenience, you can use the username `owl0` and password `password0` to login. If you prefer, the Sign Up form will allow you to create new users who are automatically given a balance of 1000 OWL coins.
