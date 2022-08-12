@@ -1,4 +1,22 @@
+# Minerva
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+This webapp has the following functionality:
+
+- Registration.
+- Login.
+- Account display (wallet) = Balance and movements.
+- Realization of money deposit.
+- Transfer from account A to account B.
+
+The component library used is Material UI. While Typescript is used, in the interests of time, some types are any. useMemo and useCallback are not used, but there are cases which they may be helpful, such as when displaying the transaction history. The backing store of the app is local using React Context. Data is not persisted between sessions. A simple set of tests for the login page are created using react-testing-library.
+
+A set of default users are already within the in-memory database for you to use. You can see the complete list in the file src/utils/db.ts. For convenience, you can use the username `owl0` and password `password0` to login. If you prefer, the Sign Up form will allow you to create new users who are automatically given a balance of 1000 OWL coins.
+
+Once you are logged in you are able to exchange coins with the other users. If you would like to add more coins to your account a faucet is available on the user page as well.
+
+Finally, the user page shows your complete transaction history.
 
 ## Getting Started
 
@@ -11,24 +29,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
